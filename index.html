@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayan Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">Nayan.</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi I'm Nayan <span>Gupta</span></h1>
+            <h3 class="profession">Web <span>Developer</span></h3>
+            <p class="para">
+                Hello! I'm Nayan Gupta, a final year BTech student with a relentless passion for web development and a never-ending thirst for exploration.
+            </p>
+            <div class="icons">
+                <a href="" class="active"><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-github'></i></a>
+            </div>
+        </div>
+        <div class="hero">
+            <img src="css/img/portfoliopic.4.avif" class="hero-img" alt="Loading...!">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="css\img\photo_2023-09-02_15-55-34.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me....</span></h2>
+            <p>From a young age, I was drawn to the world of <mark>technology</mark> , and over the years, I've honed my skills to become a proficient web developer. My journey in web development has been nothing short of <mark>exhilarating.</mark> I've
+                had the opportunity to create captivating websites, each one a canvas for innovation and creativity. What I find most thrilling about <mark>web development</mark> is the constant evolution of technology and the boundless possibilities
+                it offers. In this fast-paced field, I've learned to adapt, grow, and keep pushing the boundaries of what's possible. From designing elegant user interfaces to <mark>writing clean and efficient code</mark>, I relish every moment spent
+                crafting digital experiences. But my passion extends beyond the screen. Exploration is in my DNA. I believe that to be a great web developer, one must constantly seek inspiration from the world around us. Whether it's uncovering the latest
+                web development trends, <mark>learning a new programming language</mark>, or diving into the intricacies of user experience design.</p>
+            <!-- <div class="box">
+                <a href="#">
+                    <span>Read More</span>
+                    <div class="liquid"></div>
+                </a>
+            </div> -->
+        </div>
+    </section>
+    <section class="skillss" id="skills">
+
+
+        <div class="skill">
+            <h2 class="myskilll">My
+                <Span>Skills</Span>
+            </h2>
+            <li class="skills">
+                <h3 class="cont">HTML</h3>
+                <span class="barr"><span class="html"></span></span>
+            </li>
+            <li class="skills">
+                <h3 class="cont">CSS</h3>
+                <span class="barr"><span class="css"></span></span>
+            </li>
+            <li class="skills">
+                <h3 class="cont">BOOTSTRAP</h3>
+                <span class="barr"><span class="bootstrap"></span></span>
+            </li>
+            <li class="skills">
+                <h3 class="cont">JAVASCRIPT</h3>
+                <span class="barr"><span class="javascript"></span></span>
+            </li>
+
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+        <h2 class="Heading">Contact <span>Me!</span></h2>
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="input-box">
+                <input type="text" required id="name" placeholder="Full Name">
+                <input type="email" required id="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="text" id="phone" required placeholder="Mobile Number">
+                <input type="text" required id="subject" placeholder="Enter Subject">
+            </div>
+            <textarea name="message" required id="message" cols="30" rows="10" placeholder="How can we help you?"></textarea>
+            <input type="submit" id="btn" value="Send" class="submit">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by <span>Nayan Gupta </span>| All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
